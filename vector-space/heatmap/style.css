@@ -1,0 +1,95 @@
+/* Author: Riccardo Petrini */
+:root {
+  --bg: #06070c;
+  --fg: #e5f4ff;
+  --accent: #6bffb5;
+  --muted: #0f141f;
+  --panel: #0b1018;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "DM Mono", "SFMono-Regular", Consolas, monospace;
+  background: radial-gradient(circle at 30% 30%, #0f1c2d 0, #06070c 60%);
+  color: var(--fg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 22px;
+  border-bottom: 1px solid #111a26;
+  background: linear-gradient(90deg, #0d1726, #0a1018);
+}
+
+h1 { margin: 0 0 4px; font-size: 20px; letter-spacing: 0.04em; }
+p { margin: 0; color: #9eb6d1; }
+
+.controls { display: flex; gap: 10px; align-items: center; }
+button, input[type="range"] {
+  background: var(--muted);
+  color: var(--fg);
+  border: 1px solid #1a2736;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: inherit;
+}
+button:hover { cursor: pointer; border-color: var(--accent); }
+label { display: flex; gap: 8px; align-items: center; color: #9eb6d1; }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 16px;
+  padding: 18px 22px 32px;
+}
+
+.stage {
+  background: #0c111a;
+  border: 1px solid #142132;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.32);
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #1a2738;
+  background: radial-gradient(circle at 50% 50%, #0d1624 0, #080b12 70%);
+  display: block;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid #1a2636;
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.26);
+}
+
+#status { min-height: 22px; color: #cde8ff; }
+#preview {
+  background: #070b12;
+  border: 1px solid #1c2a3c;
+  border-radius: 10px;
+  padding: 10px;
+  color: #a6e8ff;
+  font-size: 12px;
+  max-height: 260px;
+  overflow: auto;
+}
+
+@media (max-width: 920px) {
+  main { grid-template-columns: 1fr; }
+}

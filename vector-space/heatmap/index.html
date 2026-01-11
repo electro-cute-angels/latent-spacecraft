@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heatmap Cursor – Riccardo Petrini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Heatmap Cursor</h1>
+      <p>100-D field that blooms under your cursor. Tune falloff, freeze, or reset.</p>
+    </div>
+    <div class="controls">
+      <label>Radius <input id="radius" type="range" min="40" max="240" step="5" value="140"></label>
+      <button id="freeze">Freeze</button>
+      <button id="reset">Reset</button>
+      <button id="center">Center</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="stage">
+      <canvas id="heatmap" width="960" height="640" aria-label="100 dimensional heatmap"></canvas>
+    </section>
+    <aside class="panel">
+      <h2>Status</h2>
+      <div id="status">Move cursor over the field</div>
+      <h2>Vector (first 16)</h2>
+      <pre id="preview"></pre>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
