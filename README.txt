@@ -1,4 +1,4 @@
-☆彡.。.:*・°☆.。.:*・°
+✿˚*･༓☾ `·.·´ ☽༓･*˚☾ ❦
 
 Latent Spacecraft
 Author: Riccardo Petrini
