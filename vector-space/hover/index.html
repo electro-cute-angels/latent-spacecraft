@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Hover – Riccardo Petrini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Matrix Hover</h1>
+      <p>100-D latent grid — hover, click to nudge, drag to paint.</p>
+    </div>
+    <div class="controls">
+      <button id="randomize">Randomize</button>
+      <button id="zero">Zero</button>
+      <label>Step <input type="number" id="step" min="0.01" max="1" step="0.01" value="0.1"></label>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid" id="grid" aria-label="100 dimensional grid"></section>
+    <aside class="panel">
+      <h2>Selected</h2>
+      <div id="selected">None</div>
+      <h2>Vector (first 16)</h2>
+      <pre id="preview"></pre>
+    </aside>
+  </main>
+
+  <div id="tooltip" role="tooltip"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
