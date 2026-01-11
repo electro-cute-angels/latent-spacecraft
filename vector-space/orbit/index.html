@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit Wheel – Riccardo Petrini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Orbit Wheel</h1>
+      <p>Radial bars for a 100-D latent vector. Drag outward/inward to set values.</p>
+    </div>
+    <div class="controls">
+      <button id="randomize">Randomize</button>
+      <button id="reset">Zero</button>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="wheel" width="800" height="800" aria-label="100 dimensional wheel"></canvas>
+    <aside class="panel">
+      <h2>Hover</h2>
+      <div id="hover">None</div>
+      <h2>Vector (first 16)</h2>
+      <pre id="preview"></pre>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
