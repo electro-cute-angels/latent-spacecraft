@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Lab – Riccardo Petrini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Slider Lab</h1>
+      <p>100 faders grouped by 10s. Drag, double-click to reset, shift-click to fine-tune.</p>
+    </div>
+    <div class="controls">
+      <button id="randomize">Randomize</button>
+      <button id="zero">Zero</button>
+      <button id="spread">Spread Ramp</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="banks" aria-label="100 dimensional sliders"></section>
+    <aside class="panel">
+      <h2>Focused</h2>
+      <div id="focused">None</div>
+      <h2>Vector (first 16)</h2>
+      <pre id="preview"></pre>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
