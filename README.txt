@@ -1,3 +1,5 @@
+☆彡.。.:*・°☆.。.:*・°
+
 Latent Spacecraft
 Author: Riccardo Petrini
 
@@ -9,3 +11,14 @@ post-processing - Custom Three.js post-processing passes and variants.
 sample - Reference demos, servers, and checkpoints.
 shaders - TSL/GLSL noise shader snippets for rendering pipeline.
 vector-space - Custom creation of latent values in the latent vector feeding the GANs (heatmap, hover, orbit, slider).
+
+
+┏✦┈⋇┈✶┈⋇┈✦┓
+┆         ┆
+┆         ┆
+┆         ┆
+┆         ┆
+┆         ┆
+┆         ┆
+┆         ┆
+┗✦┈⋇┈✶┈⋇┈✦┛
