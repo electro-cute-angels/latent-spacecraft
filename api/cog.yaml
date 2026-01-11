@@ -1,0 +1,8 @@
+build:
+  cog_runtime: true
+  python_version: "3.9"
+  system_packages:
+    - libsndfile1
+  python_requirements: requirements.txt
+
+predict: "predict.py:Predictor"
