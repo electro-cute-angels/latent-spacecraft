@@ -1,0 +1,56 @@
+/* Autore: Riccardo Petrini */
+:root {
+  --bg: #03040a;
+  --fg: #e6f7ff;
+  --accent: #f6ff52;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "DM Mono", "SFMono-Regular", Consolas, monospace;
+  overflow: hidden;
+}
+
+#scene {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+  gap: 8px;
+}
+
+#status {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(246, 255, 82, 0.35);
+}
+
+#transcription {
+  min-height: 48px;
+  font-size: 16px;
+  line-height: 1.4;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(246, 255, 82, 0.35);
+  padding: 12px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+}
+
+.word { color: #9ee6ff; }
+.layer { color: var(--accent); }
+.latent { color: #ff7de9; }
