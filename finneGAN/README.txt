@@ -1,1 +1,2 @@
-finneGAN
+finneGAN***********************
+!--- ricorda latet vector + permutations
