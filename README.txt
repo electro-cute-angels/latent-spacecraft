@@ -12,6 +12,7 @@ sample - Reference demos, servers, and checkpoints.
 shaders - TSL/GLSL noise shader snippets for rendering pipeline.
 vector-space - Custom creation of latent values in the latent vector feeding the GANs (heatmap, hover, orbit, slider).
 
+!!!!! ricorda 16kHz e 16384 slices + guarda checkpoints
 
 ┏✦┈⋇┈✶┈⋇┈✦┓
 ┆         ┆
