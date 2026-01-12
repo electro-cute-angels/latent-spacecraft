@@ -1,6 +1,6 @@
 ✿˚*･༓☾ `·.·´ ☽༓･*˚☾❦
 
-Latent Spacecraft
+Latent Spacecraft / bits
 Author: Riccardo Petrini
 
 /api - Cog entrypoints and model glue for concatenation-gan inference
