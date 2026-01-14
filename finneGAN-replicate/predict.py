@@ -11,11 +11,11 @@ from inference import load_generator, generate_layers, SAMPLE_RATE, SLICE_LEN
 
 class Predictor(BasePredictor):
     def setup(self) -> None:
-        # Load generator once
+
         ckpt_env = os.environ.get("FINNEGAN_CHECKPOINT", "checkpoint/epoch450_step166500_G.pt")
         self.generator, self.device = load_generator(ckpt_env, slice_len=SLICE_LEN)
 
-        # Load Whisper (CPU-friendly; if GPU present, it will use it)
+        
         whisper_name = os.environ.get("WHISPER_MODEL", "small")
         whisper_device = "cuda" if torch.cuda.is_available() else "cpu"
         self.whisper = whisper.load_model(whisper_name, device=whisper_device)
@@ -29,7 +29,7 @@ class Predictor(BasePredictor):
     ) -> Any:
         rng = np.random.default_rng(seed)
 
-        # Random 100-D latent in [-1, 1]; first 16 dims are the categorical bits (0/1)
+        
         categorical = rng.integers(low=0, high=2, size=(16,), dtype=np.int32)
         z = rng.uniform(-1.0, 1.0, size=(1, 100)).astype(np.float32)
         z[0, :16] = categorical.astype(np.float32)
