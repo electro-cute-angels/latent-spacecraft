@@ -13,7 +13,7 @@ Author: Riccardo Petrini
 /shaders - TSL/GLSL noise shader snippets for rendering pipeline
 /vector-space - Custom creation of latent values for the latent vector feeding the GANs
 
-!!!!! ricorda 16kHz e 16384 slices + guarda checkpoints
+!!!!! ricorda 16kHz e 16384 slices + matching checkpoints
 
 ┏✦┈⋇┈✶┈⋇┈✦┓
 ┆         ┆
