@@ -5,7 +5,7 @@ Author: Riccardo Petrini
 
 /api - Cog entrypoints and model glue for concatenation-gan inference
 /distributions - JS distribution samplers
-/finneGAN - Three.js audio-visual latent interface
+/finneGAN - Web-based audio-visual latent interface
 /gan - Python GAN servers (Flask/FastAPI) and inference helpers   >>>>>> for production cloudflare + render API endpoint
 /post-processing - Custom Three.js post-processing passes and variants
 /sample - Reference demos, servers, and checkpoints
