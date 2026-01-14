@@ -1,1 +1,1 @@
-
+finneGAN deployment on Replicate
